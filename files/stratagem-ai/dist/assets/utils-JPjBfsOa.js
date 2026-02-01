@@ -1,0 +1,1 @@
+function l(e,t){return e.length<=t?e:e.slice(0,t)+"..."}function a(e,t,c="text/plain"){const d=new Blob([e],{type:c}),o=URL.createObjectURL(d),n=document.createElement("a");n.href=o,n.download=t,document.body.appendChild(n),n.click(),document.body.removeChild(n),URL.revokeObjectURL(o)}export{a as d,l as t};
